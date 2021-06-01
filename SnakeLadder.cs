@@ -70,6 +70,12 @@ namespace Programming
 					Console.WriteLine("LUCKY!! YOU GOT A LADDER.");
 					Console.WriteLine("YUPP!! Now, You are at " + playerPosition + " position.");
 				}
+				else if (playerPosition > 100)
+				{
+					playerPosition = playerPosition - diceRoll;
+					Console.WriteLine("OHH!! YOU CAN'T JUMP, YOU MUST LAND ON 100.");
+				
+				}
 
 			}
 		}
