@@ -7,6 +7,7 @@ namespace Programming
 		public static void Main(String[] args)
 		{
 			//variables
+			int TotalNoOfDiceRoll = 0;
 			int playerPosition = 1;
 			int diceRoll = 0;
 			int[] SnakeArray = { 54, 90, 99 };
@@ -24,6 +25,7 @@ namespace Programming
 				playerPosition = playerPosition + diceRoll;
 				playerPosition = playerPosition - 1;
 				Console.WriteLine("Current Position =" + " " + playerPosition);
+				TotalNoOfDiceRoll++;
 				if (playerPosition == 100)
 				{
                     Console.WriteLine("CONGRATULATION!! YOU WON THE GAME.");
@@ -78,6 +80,7 @@ namespace Programming
 				}
 
 			}
+            Console.WriteLine("Number of Times The Dice was rolled to Win the Game =" + TotalNoOfDiceRoll);
 		}
 	}
 }
