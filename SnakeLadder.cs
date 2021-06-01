@@ -7,14 +7,14 @@ namespace Programming
 		public static void Main(String[] args)
 		{
 			//variables
-			
+			int playerPosition = 1;
 			int diceRoll = 0;
 			int[] SnakeArray = { 54, 90, 99 };
 			int[] LadderArray = { 9, 40, 67 };
 			Console.WriteLine("<-------Welcome to the Game of SNAKE & LADDER------->");
             Console.WriteLine("-----------------------------------------------------");
 			Console.WriteLine("Starting Position of the Player =  0" );
-			for (int playerPosition = 1; playerPosition <= 100; playerPosition++)
+			for ( playerPosition = 1; playerPosition <= 100; playerPosition++)
 			{
 				//generating Random numbers from 1 to 6
 				Random random = new Random();
@@ -24,6 +24,10 @@ namespace Programming
 				playerPosition = playerPosition + diceRoll;
 				playerPosition = playerPosition - 1;
 				Console.WriteLine("Current Position =" + " " + playerPosition);
+				if (playerPosition == 100)
+				{
+                    Console.WriteLine("CONGRATULATION!! YOU WON THE GAME.");
+				}
 				if (diceRoll == 0)
 				{
 					playerPosition = playerPosition - diceRoll;
