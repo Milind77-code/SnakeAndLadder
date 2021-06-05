@@ -12,7 +12,7 @@ namespace Programming
 			int[] SnakeArray = { 54, 90, 99 };
 			int[] LadderArray = { 9, 40, 67 };
 			Console.WriteLine("<-------Welcome to the Game of SNAKE & LADDER------->");
-            Console.WriteLine("-----------------------------------------------------");
+            		Console.WriteLine("-----------------------------------------------------");
 			Console.WriteLine("Starting Position of the Player =  0" );
 			for ( playerPosition = 1; playerPosition <= 100; playerPosition++)
 			{
@@ -26,7 +26,7 @@ namespace Programming
 				Console.WriteLine("Current Position =" + " " + playerPosition);
 				if (playerPosition == 100)
 				{
-                    Console.WriteLine("CONGRATULATION!! YOU WON THE GAME.");
+                    		Console.WriteLine("CONGRATULATION!! YOU WON THE GAME.");
 				}
 				if (diceRoll == 0)
 				{
