@@ -7,12 +7,11 @@ namespace Programming
 		public static void Main(String[] args)
 		{
 			//variables
-			
 			int diceRoll = 0;
 			int[] SnakeArray = { 54, 90, 99 };
 			int[] LadderArray = { 9, 40, 67 };
 			Console.WriteLine("<-------Welcome to the Game of SNAKE & LADDER------->");
-            Console.WriteLine("-----------------------------------------------------");
+           		Console.WriteLine("-----------------------------------------------------");
 			Console.WriteLine("Starting Position of the Player =  0" );
 			for (int playerPosition = 1; playerPosition <= 100; playerPosition++)
 			{
