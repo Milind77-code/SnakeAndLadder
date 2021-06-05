@@ -80,7 +80,7 @@ namespace Programming
 				}
 
 			}
-            Console.WriteLine("Number of Times The Dice was rolled to Win the Game =" + TotalNoOfDiceRoll);
+            	Console.WriteLine("Number of Times The Dice was rolled to Win the Game =" + TotalNoOfDiceRoll);
 		}
 	}
 }
